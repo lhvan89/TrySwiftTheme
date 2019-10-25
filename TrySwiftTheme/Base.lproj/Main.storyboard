@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrySwiftTheme" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter_black" translatesAutoresizingMaskIntoConstraints="NO" id="HIu-7i-mDP">
+                                <rect key="frame" x="132" y="64" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="KS0-lM-KX3"/>
+                                    <constraint firstAttribute="width" secondItem="HIu-7i-mDP" secondAttribute="height" multiplier="1:1" id="rh0-gs-eva"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KF-kP-dsv">
+                                <rect key="frame" x="177.5" y="222" width="59" height="23"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DlX-Fu-RG7">
+                                <rect key="frame" x="0.0" y="423" width="414" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SpW-v5-UiO">
+                                        <rect key="frame" x="103.5" y="0.0" width="207" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPC-Nk-DkE">
+                                                <rect key="frame" x="0.0" y="0.0" width="69" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Theme 1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTabSelectTheme1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kcn-Mb-TnL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQS-cA-iyx" userLabel="Theme 2">
+                                                <rect key="frame" x="69" y="0.0" width="69" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Theme 1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTabSelectTheme2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kAV-Ii-B0F"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfS-l7-cEE" userLabel="Theme 3">
+                                                <rect key="frame" x="138" y="0.0" width="69" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Theme 1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTabSelectTheme3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kav-Ds-uQl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="yQS-cA-iyx" firstAttribute="width" secondItem="oPC-Nk-DkE" secondAttribute="width" id="TYj-mk-9CE"/>
+                                            <constraint firstItem="RfS-l7-cEE" firstAttribute="width" secondItem="oPC-Nk-DkE" secondAttribute="width" id="VZd-Ye-7jz"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="SpW-v5-UiO" firstAttribute="centerX" secondItem="DlX-Fu-RG7" secondAttribute="centerX" id="SMg-iy-Rhi"/>
+                                    <constraint firstItem="SpW-v5-UiO" firstAttribute="width" secondItem="DlX-Fu-RG7" secondAttribute="width" multiplier="0.5" id="dVp-Yl-tcl"/>
+                                    <constraint firstItem="SpW-v5-UiO" firstAttribute="top" secondItem="DlX-Fu-RG7" secondAttribute="top" id="hFT-R3-DRN"/>
+                                    <constraint firstAttribute="height" constant="50" id="lbV-FU-CRT"/>
+                                    <constraint firstAttribute="bottom" secondItem="SpW-v5-UiO" secondAttribute="bottom" id="nr6-na-bh8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HIu-7i-mDP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="40X-we-esq"/>
+                            <constraint firstItem="0KF-kP-dsv" firstAttribute="top" secondItem="HIu-7i-mDP" secondAttribute="bottom" constant="8" id="GNl-UK-DcL"/>
+                            <constraint firstItem="DlX-Fu-RG7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mly-2U-s9X"/>
+                            <constraint firstItem="DlX-Fu-RG7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X6l-OT-8JD"/>
+                            <constraint firstItem="DlX-Fu-RG7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dls-qL-XqL"/>
+                            <constraint firstItem="HIu-7i-mDP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="isG-ik-FFe"/>
+                            <constraint firstItem="0KF-kP-dsv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mx5-LG-8zD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DlX-Fu-RG7" secondAttribute="trailing" id="y2m-Di-bQF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="birdImage" destination="HIu-7i-mDP" id="4gF-mS-0qE"/>
+                        <outlet property="nameLabel" destination="0KF-kP-dsv" id="tEK-HT-icr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="twitter_black" width="512" height="512"/>
+    </resources>
+</document>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<dict>
+		<key>textColor</key>
+		<string>#F83A31</string>
+	</dict>
+	<key>Image</key>
+	<dict>
+		<key>twitter</key>
+		<string>twitter_red</string>
+	</dict>
+</dict>
+</plist>
